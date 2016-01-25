@@ -1,0 +1,24 @@
+{
+  "name": "zgldh/laravel-query-filter",
+  "license": "MIT",
+  "description": "An easier way to filter Eloquent and Models. Save you from Request::input and Where hell.",
+  "keywords": [
+    "laravel",
+    "query",
+    "filter"
+  ],
+  "authors": [
+    {
+      "name": "zgldh",
+      "email": "zgldh@hotmail.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "5.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "zgldh\\LaravelQueryFilter\\": "src/"
+    }
+  }
+}
