@@ -50,6 +50,18 @@ An easier way to filter Eloquent and Models. Save you from Request::input and Wh
     
     //应用过滤器，得到最终结果
     $users = $filter->filter(new User(), \Request::all())->get();
+    
+    //在上文例子中， \Request::all() 的形式通常应该为 
+    [
+        'name'=>'zgldh',
+        'age'=>20
+        'email'=>'zg',
+        'created_at'=>[
+            'start'=>'2012-12-12',
+            'end'=>'2012-12-13',
+        ],
+        'status'=>null
+    ]
 ```
 
 ## 安装
