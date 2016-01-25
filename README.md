@@ -45,9 +45,16 @@ An easier way to filter Eloquent and Models. Save you from Request::input and Wh
         }
     }
     
+    //实例化过滤器
     $filter = new UserFilter();
-    $users = $filter->filter(new User(), \Request::all());
+    
+    //应用过滤器，得到最终结果
+    $users = $filter->filter(new User(), \Request::all())->get();
 ```
+
+## 安装
+
+``` composer require laravel-query-filter ```
 
 
 ## 过滤规则
