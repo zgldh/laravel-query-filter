@@ -54,28 +54,28 @@ An easier way to filter Eloquent and Models. Save you from Request::input and Wh
 
 ### LIKE 
     
-    会生成 ```PHP $builder->where('key', 'like', '%'.$value.'%') ``` 的查询。 
+会生成 ```PHP $builder->where('key', 'like', '%'.$value.'%') ``` 的查询。 
 
 ### EQUAL 
 
-    会生成 ```PHP $builder->where('key', $value) ``` 的查询。 
+会生成 ```PHP $builder->where('key', $value) ``` 的查询。 
 
 ### NOT_EQUAL 
 
-    会生成 ```PHP $builder->where('key', '<>', $value) ``` 的查询。 
+会生成 ```PHP $builder->where('key', '<>', $value) ``` 的查询。 
     
 ### GREATER_THAN 
 
-    会生成 ```PHP $builder->where('key', '>', $value) ``` 的查询。 
+会生成 ```PHP $builder->where('key', '>', $value) ``` 的查询。 
     
 ### LESS_THAN 
 
-    会生成 ```PHP $builder->where('key', '<', $value) ``` 的查询。 
+会生成 ```PHP $builder->where('key', '<', $value) ``` 的查询。 
     
 ### BETWEEN 
 
-    要求传入参数为 ``` $value = ['start'=>123, 'end'=>456] ``` 的形式
-    会生成
+要求传入参数为 ``` $value = ['start'=>123, 'end'=>456] ``` 的形式
+会生成
     
     ```PHP
         
@@ -84,11 +84,11 @@ An easier way to filter Eloquent and Models. Save you from Request::input and Wh
     
     ``` 
     
-    的查询。 
+的查询。 
     
 ### CALLBACK 
 
-    会跳入 callback 函数， 执行其中的查询。 
+会跳入 callback 函数， 执行其中的查询。 
     
     
 ## 技巧
