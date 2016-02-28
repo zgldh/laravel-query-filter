@@ -120,7 +120,7 @@ class Column
      */
     private function normalizeColumnValue($value)
     {
-        if ($this->operator == self::BETWEEN || $this->operator == self::ABS_BETWEEN) {
+        if ($this->operator == self::BETWEEN) {
             if (isset($value['start']) || isset($value['end'])) {
                 $value = [$value];
             }
